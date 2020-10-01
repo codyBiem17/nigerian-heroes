@@ -1,6 +1,6 @@
-import React, { useState }from 'react';
+import React from 'react';
 import GalleryData from './data';
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const ImagesGallery = ({handleClick}) => {
     // const [isClicked, setIsClicked] = useState(false)

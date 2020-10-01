@@ -14,7 +14,7 @@ class App extends Component {
     // history.push("/heroesDetails");
     let imgId = e.target.id;
     GalleryData.filter((heroes) => {
-      return heroes.id == imgId ? history.push("/heroesDetails") : null;
+      return heroes.id === imgId ? history.push("/heroesDetails") : null;
     })
   }
 
