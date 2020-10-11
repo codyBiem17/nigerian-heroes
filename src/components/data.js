@@ -19,8 +19,8 @@ const GalleryData = [
   },
   {
     id: 4,
-    name: "Dora Akunyili",
-    imgSrc: require("../images/dora-akunyili.jpg"),
+    name: "Obafemi Awolowo",
+    imgSrc: require("../images/late-Chief-Obafemi-Awolowo.jpg"),
     color: "#ff0000",
   },
   {
@@ -46,8 +46,8 @@ const GalleryData = [
 
   {
     id: 8,
-    name: "Alvan Ikoku",
-    imgSrc: require("../images/alvan-ikoku.jpg"),
+    name: "Lateef Jakande",
+    imgSrc: require("../images/lateef-jakande.jpg"),
     color: "#ff0000",
   },
 
@@ -74,8 +74,8 @@ const GalleryData = [
 
   {
     id: 12,
-    name: "Obafemi Awolowo",
-    imgSrc: require("../images/late-Chief-Obafemi-Awolowo.jpg"),
+    name: "Dora Akunyili",
+    imgSrc: require("../images/dora-akunyili.jpg"),
     color: "#ff0000",
   },
 
@@ -88,8 +88,8 @@ const GalleryData = [
 
   {
     id: 14,
-    name: "Chioma Ajunwa",
-    imgSrc: require("../images/ajunwa.jpg"),
+    name: "Alvan Ikoku",
+    imgSrc: require("../images/alvan-ikoku.jpg"),
     color: "#ff0000",
   },
 
@@ -130,8 +130,8 @@ const GalleryData = [
 
   {
     id: 20,
-    name: "Lateef Jakande",
-    imgSrc: require("../images/lateef-jakande.jpg"),
+    name: "Chioma Ajunwa",
+    imgSrc: require("../images/ajunwa.jpg"),
     color: "#ff0000",
   },
 ];

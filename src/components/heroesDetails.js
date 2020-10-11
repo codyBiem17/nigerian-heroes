@@ -1,21 +1,20 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
-// import GalleryData from "./data";
 
 
-const HeroDetails = () => {
-    // const imgs = Object.keys(GalleryData);
-    // const showImg = imgs.map(img => {
-    //     return GalleryData[img].ImgSrc
-    // })
+
+const HeroDetails = ( { heroFullDetails } ) => {
     return (
       <div className="heroesCard">
-        {
-          // GalleryData.map((filteredDetails) => (
-          <Card>
-            <Card.Img variant="top" src="https://picsum.photos/100/100" />
+        <h1>Are you there!</h1>
+        {heroFullDetails.map((filteredDetails) => (
+          <Card key={filteredDetails.id}>
+            <Card.Img variant="top" src={filteredDetails.imgSrc} />
             <Card.Body>
-              <Card.Title>Card Title</Card.Title>
+              <Card.Title> {filteredDetails.name} </Card.Title>
+              <Card.Subtitle className="mb-2 text-muted">
+                Card Subtitle
+              </Card.Subtitle>
               <Card.Text className="details">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
@@ -23,8 +22,7 @@ const HeroDetails = () => {
               {/* <Button variant="primary">Go somewhere</Button> */}
             </Card.Body>
           </Card>
-          // ))
-        }
+        ))}
       </div>
     );
 }

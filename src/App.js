@@ -8,14 +8,25 @@ import { createBrowserHistory } from "history";
 const history = createBrowserHistory();
 
 class App extends Component {
-
-  handleClick = (e) => {
-    // if(GalleryData.includes())
-    // history.push("/heroesDetails");
-    let imgId = e.target.id;
-    GalleryData.filter((heroes) => {
-      return heroes.id === imgId ? history.push("/heroesDetails") : null;
-    })
+  constructor(props) {
+    super(props);
+    this.state = {
+      isClicked: false,
+      heroFullDetails: []
+    }
+  }
+  handleClick = (uniq) => {
+    let heroFullDetails = GalleryData.filter((hero) => {
+      return hero.id === uniq;
+    });
+    this.setState(
+      {
+        heroFullDetails: heroFullDetails
+      },
+      () => {
+        console.log(heroFullDetails);
+        history.push("/heroesDetails");
+      })
   }
 
  
@@ -30,12 +41,12 @@ class App extends Component {
 
           <Route path="/heroesDetails">
             <section>
-              <HeroDetails />
+              <HeroDetails heroFullDetails={this.state.heroFullDetails}/>
             </section>
           </Route>
 
           <main>
-            <Route path="/">
+            <Route exact path="/">
               <ImagesGallery handleClick={this.handleClick}/>
             </Route>
           </main>

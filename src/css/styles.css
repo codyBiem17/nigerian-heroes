@@ -5,14 +5,15 @@
 }
 
 body {
-    background: linear-gradient(to right, 
+    background-image: linear-gradient(to right, 
        #01A668 32%, #ffffff 30% 68%, #01A668 60%);
+       background-color: rgba(#01A668, white, #01A668, 0.5);
     /* text-align: center; */
 }
 
 .App.container {
-    /* width: 90vw; */
-    height: 70vh;
+    width: 90vw;
+    height: 90vh;
     margin: 15vh auto;
     /* border: 1px solid red; */
 }
@@ -31,16 +32,35 @@ header p {
 }
 
 main {
-    border: 1px solid #046841;
+    /* border: 1px solid #046841; */
     border-radius: 5px;
+}
+
+.grid-row {
+    display: -ms-flexbox; /*IE10*/
+    display: flex;
+    -ms-flex-wrap: wrap; /*IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+    /* border: 1px solid red; */
+}
+
+.imgWrapper {
+    /* border: 1px solid blue; */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
 }
 
 img {
     max-width: 100%;
-    width: 25%;
+    /* margin-top: 8px; */
+    vertical-align: middle;
+    width: 100%;
+    /* width: 25%; */
     height: auto;
-    padding-left: 5px;
-    padding-right: 5px;
+    /* padding-left: 5px;
+    padding-right: 5px; */
 }
 
 .tooltipWrapper {
@@ -61,7 +81,7 @@ img {
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
-    top: 100%;
+    bottom: 100%;
     left: 50%;
     margin-left: -60px;
 }
