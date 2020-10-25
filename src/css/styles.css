@@ -6,12 +6,13 @@
 
 body {
     background-image: linear-gradient(to right, 
-       #01A668 32%, #ffffff 30% 68%, #01A668 60%), rgba(#01A668, white, #01A668, 0.5);
+       #01A668 32%, #ffffff 30% 68%, #01A668 60%);
+       background-color: rgba(#01A668, white, #01A668, 0.5);
     /* text-align: center; */
 }
 
 .App.container {
-    /* width: 90vw; */
+    width: 90vw;
     height: 70vh;
     margin: 15vh auto;
     /* border: 1px solid red; */
